@@ -1,0 +1,21 @@
+Establishes whether test has passed or failed, by asserting certtain states of code
+Commonly uses AssertEquals()
+
+    assertEquals(<Message to be displayed upon failure> , <Expected value> , <Actual value>);
+
+applied example
+    @Test
+public void playerWinsTest() {
+    BlackJack blackJack = new BlackJack();
+    assertEquals("Expected: Player wins with 21", 21, blackJack.play(21, 18));
+}
+
+
+OVERLOADS
+
+many overloaded variants including:
+    assertEquals(double expected, double actual, double delta);
+    assertEquals(java.lang.String message, long expected, long actual);
+    assertEquals(java.lang.Object expected, java.lang.Object actual);
+
+    assert

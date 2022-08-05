@@ -1,0 +1,49 @@
+package JUnit;
+
+public class JUnitAtTest {
+
+    @Test
+public void test1() {
+    fail("Fail");
+}
+@Test(timeout = 1000)
+public void test2() {
+    try {
+        Thread.sleep(2000);
+    } catch (InterruptedException e) {
+        e.printStackTrace();
+    }
+}
+
+@Test(expected = ArithmeticException.class)
+public void test3() {
+    throw new ArithmeticException();
+}
+    
+}
+
+three types of testing
+
+ Functional	            Non-Functional	        Maintenance
+Unit Testing	            Performance	            Regression
+Integration             Testing	Scalability	        Maintenance
+Smoke Testing	            Usability                  
+User acceptance testing                                         
+
+JUNIT FOCUSSES ON UNIT TESTS - unit is typically a method or class
+
+State testing involves direct inputs and outputs
+
+Interaction testing; mock objects are used to verigy interaction with collaborators
+
+Integration test - components of applications working together
+
+JUNIT is availiable as a maven dependancy for java projects
+
+MUST CONVERT JAVA PROJECT TO MAVEN PROJECT WHICH GENERATES A pom.xml file
+
+@Test annotation
+
+Dennotes that the below shoudl be run as a test
+@tests(timeout = x) denotes that after x, the test should fail and expected exceptions can be handled
+THIS allows the tests to pass when the exception is thrown e.g. 

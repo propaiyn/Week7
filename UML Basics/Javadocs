@@ -1,0 +1,11 @@
+// Java provides a tool called JavaDoc that can automatically create HTML-based documentation based on comments in your source files.
+
+All you have to do is add a comment for each public class, field, and method; then run the source files through the javadoc command, which will create professional-looking web-based documentation for all your classes.
+
+@author	Provides information about the author, typically the author’s name, e-mail address, website information, and so on.
+@version	Indicates the version number.
+@since	Used to indicate the version with which this class, field, or method was added.
+@param	Provides the name and description of a method or constructor.
+@return	Provides a description of a method’s return value.
+@throws	Indicates exceptions that are thrown by a method or constructor.
+@deprecated	Indicates that the class, field, or method is deprecated and shouldn’t be used.

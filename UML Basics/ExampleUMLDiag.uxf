@@ -1,0 +1,53 @@
+<diagram program="umletino" version="15.0.0"><zoom_level>10</zoom_level><help_text>Space for diagram notes</help_text><element><id>UMLClass</id><coordinates><x>90</x><y>420</y><w>210</w><h>190</h></coordinates><panel_attributes>Trainer
+--
+-id: Long
+-name: String
+
+--
+-- teach(): void
+-- selectAllCourses(): list
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>530</x><y>410</y><w>210</w><h>210</h></coordinates><panel_attributes>Trainee
+-
+- id: Long
+- Name: String
+- Email: String
+- Password: String
+-PhoneNo: int
+
+--
+
+Responsibilities
+-- takecourse() : void
+-- coursesCompleted: list
+-- takeExam() : void
+-- viewExamHistory() : list</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>310</x><y>40</y><w>210</w><h>190</h></coordinates><panel_attributes>Manager
+--
+- id: Long
+- Name: String
+--
+#Operation(i: int): int
+/+AbstractOperation()/
+--
+Responsibilities
+-- addNewStudent()
+-- modifyStudents()</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>300</x><y>720</y><w>210</w><h>190</h></coordinates><panel_attributes>Courses
+--
+- CourseID: Long
+- CourseName: String
+
+--</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>290</x><y>500</y><w>260</w><h>50</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;-
+m1=1
+m2=1..*
+&lt; Assigned to
+group=group-0</panel_attributes><additional_attributes>10;20;240;20</additional_attributes></element><element><id>Relation</id><coordinates><x>500</x><y>610</y><w>150</w><h>130</h></coordinates><panel_attributes>
+m1=0..*
+group=group-2</panel_attributes><additional_attributes>10;110;130;10</additional_attributes></element><element><id>Relation</id><coordinates><x>170</x><y>600</y><w>150</w><h>140</h></coordinates><panel_attributes>
+m1=0..*
+group=group-2</panel_attributes><additional_attributes>130;120;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>290</x><y>220</y><w>50</w><h>220</h></coordinates><panel_attributes>
+m1=1..*
+m2=1
+
+group=group-3</panel_attributes><additional_attributes>10;200;20;10</additional_attributes></element><element><id>Relation</id><coordinates><x>510</x><y>220</y><w>60</w><h>210</h></coordinates><panel_attributes>
+m1=1..*
+m2=1
+group=group-4</panel_attributes><additional_attributes>20;190;10;10</additional_attributes></element></diagram>

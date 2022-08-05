@@ -1,0 +1,21 @@
+package JUnit;
+
+public class AfterClass {
+    @Test
+public void test1() {
+    System.out.println("Test 1");
+}
+
+@Test
+public void test2() {
+    System.out.println("Test 2");
+}
+
+@AfterClass
+public static void teardown() {
+    System.out.println("After class");
+}
+}
+
+// same as before class except after tests within class are run
+//e.g. database disconnection functionallity

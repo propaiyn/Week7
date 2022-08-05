@@ -1,0 +1,19 @@
+package JUnit;
+
+public class Ignore {
+    Test
+@Ignore
+public void method3() {
+    System.out.println("Test 1");
+}
+
+@Ignore
+@Test
+public void method4() {
+    System.out.println("Test 2");
+}}
+
+//Skips a method
+// only works with another annotation
+// order of ignore isnt relevant
+

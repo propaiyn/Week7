@@ -1,0 +1,22 @@
+package JUnit;
+
+public class Before {
+    @Before
+public void init() {
+    System.out.println("Before test");
+}
+
+@Test
+public void test1() {
+    System.out.println("Test 1");
+}
+
+@Test
+public void test2() {
+    System.out.println("Test 2");
+}
+    
+}
+
+// executed BEFORE each @Test method
+// e.g. if all tests methods start with same lines of code, can be reassign to ONE BEFORE METHOD

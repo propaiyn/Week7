@@ -1,0 +1,38 @@
+@BeforeClass
+public static void setup() {
+    System.out.println("Before class");
+}
+
+@Before
+public void init() {
+    System.out.println("Before test");
+}
+
+@Test
+public void test1() {
+    System.out.println("Test 1");
+}
+
+@Test
+public void test2() {
+    System.out.println("Test 2");
+}
+
+@After
+public void finalise() {
+    System.out.println("After test");
+}
+
+@AfterClass
+public static void teardown() {
+    System.out.println("After class");
+}
+
+Before class
+Before test
+Test 1
+After test
+Before test
+Test 2
+After test
+After class

@@ -1,0 +1,22 @@
+package JUnit;
+
+public class After {
+    @Test
+public void test1() {
+    System.out.println("Test 1");
+}
+
+@Test
+public void test2() {
+    System.out.println("Test 2");
+}
+
+@After
+public void reset() {
+    System.out.println("After test");
+}
+}
+
+// Executed after test method, IRRESPECTIVE IF PASSED OR FAILED
+// e.g. Clean up data used in enviornmen
+// Returns data to previous state; before method ensures data from last test isnt reused

@@ -1,0 +1,23 @@
+package JUnit;
+
+public class AtBeforeClass {
+    
+    @BeforeClass
+public static void setup() {
+    System.out.println("Before class");
+}
+
+@Test
+public void test1() {
+    System.out.println("Test 1");
+}
+
+@Test
+public void test2() {
+    System.out.println("Test 2");
+}
+}
+
+//@BeforeClass
+// preceeds the method which is to be executed only once before tests in that class run
+// use case e.g. connecting to a database once rather than connecting to it each time a test is started

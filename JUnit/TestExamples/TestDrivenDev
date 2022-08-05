@@ -1,0 +1,29 @@
+Write an initially failing code that defines desired improvement
+
+Make the test pass using minimal amount of code
+
+Refactor the code to ana cceptable standard
+
+KIS(KEEP IT SIMPLE)
+
+YAGNI(YOU ARENT GOING TO NEED IT)
+
+DRY(DONT REPEAT YOURSELF)
+
+FRP(SINGLE RESPONSIBILLITY PRINCIPLE)
+
+
+
+First we would add a new test.
+
+Next we will run the test suite to see if the test passes based off of current code, or if it fails and thus needs new code.
+
+Write the code needed to fulfill the requirement so that the test passes.
+
+In this step we want to reduce the amount of code duplicated, make it as simple as possible, and not write more code than is needed.
+
+Run the test again to see if our new code works as expected, if it does go back to step 1 and add the next test, if it doesn't repeat step 3.
+
+Refactor the code to remove any duplicated code, make it look cleaner so that it is more maintainable, and simplyfy it. Refactoring is a technique used to restructure an existing body of code by altering the internal structure without changing its external behaviour.
+
+Repeat steps 1 to 5 for the next piece of functionality.

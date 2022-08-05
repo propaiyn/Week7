@@ -1,0 +1,8 @@
+suit = collection of test classes
+test runner excutes many suites
+
+@RunWith	Allows a class to use JUnit Core runners; replaces default runner class
+@Parameters	Signifies the parameter dataset to use for the test(s)
+@Category	Used to add metadata for a test
+@IncludeCategory	Used to include tests with specific metadata
+@ExcludeCategory	Used to exclude tests with specific metadatas
