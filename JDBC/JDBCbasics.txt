@@ -1,0 +1,3 @@
+JDBC - Java database connectivity
+
+JDBC acts as an api for java which defines how aclient may accesssa database
